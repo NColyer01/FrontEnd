@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reroll</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel ="<fontInport>" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
+    <style>
+      body {
+        background-image: url(images/backgroundwallpaper.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color:white;
+      }
+      div[class*=box] {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 33.33%;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .btn {
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+        width: 250px;
+        cursor: pointer;
+      }
+      .btn-two {
+        color: #FFF;
+        transition: all 0.5s;
+        position: relative; 
+        
+      }
+      .btn-two span {
+        z-index: 2; 
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%; 
+      }
+      .btn-two::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: 0.5s;
+        border: 1px solid rgba(255,255,255,0.5);
+        background-color: rgba(70, 68, 68, 0.7);
+      }
+      .btn-two::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: 0.5s;
+        border: 1px solid rgba(255,255,255,0.5);
+        background-color: rgba(70, 68, 68, 0.7);
+      }
+      .btn-two:hover::before {
+        transform: rotate(-45deg);
+        transition: all 0.35s;
+        background-color: rgba(70, 68, 68, 0.5);
+      }
+      .btn-two:hover::after {
+        transform: rotate(45deg);
+        transition: all 0.35s;
+        background-color: rgba(70, 68, 68, 0.5);
+      }
+
+      .logo {
+        position: absolute;
+        top: 20%;
+        transform: translate(0, -50%);
+        height: 33.33%;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000%;
+        height: auto;
+      }
+      .invisiblebutton {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 0%;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        pointer-events: none;
+      }
+      
+    </style>
+  </head>
+  <body>
+      <div class="button">
+        <div class="box-2">
+            <a href="http://127.0.0.1:5500/FrontEndPage2.html">
+              <button class="btn btn-two" id="mainButton" style="font-family: 'Courier New', Courier, monospace; font-size: X-large; background: transparent; border: none; color: white;">ROLL</button>
+        </div>
+        <a>
+          <div class="invisiblebutton">
+        <button style="font-family: 'Courier New', Courier, monospace; font-size: X-large; background: transparent; border: none; color: white;">ROLL</button> 
+          </div>
+      <div class="logo">
+        <img src="images/logo.png" alt="dice logo saying Reroll - roleplay randomized" class="logoclass">
+      </div>
+  </body>
+</html>
