@@ -1,24 +1,8 @@
-.stats {
-    position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    animation-name: mymove;
-    animation-duration: 1.6s;
-    overflow: hidden;
-}
-
-@keyframes mymove {
+@keyframes fadeIn {
     0% {
-        transform: translate(-50%, 20%);
-        overflow: hidden;
-    }
-    95% {
-        transform: translate(-50%, -52%);
-        overflow: hidden;
+        opacity: 0
     }
     100% {
-        transform: translate(-50%, -50%);
-        overflow: hidden;
+        opacity: 1
     }
 }

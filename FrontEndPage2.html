@@ -8,6 +8,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      html {
+        height: 100%;
+      }
       body {
         background-image: url(images/backgroundwallpaper.jpg);
         background-position: center center;
@@ -18,15 +21,164 @@
         font-family: "Courier New", Courier, monospace;
         font-size: x-large;
         overflow: hidden;
+        height: 100%;
+      }
+
+      .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 960px;
+        height: 100%;
+        min-height: 100%;
+      }
+
+      .charSheetDimensions {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size:smaller;
+      }
+
+      .characterInfo {
+        overflow: hidden;
+        animation-name: fadeIn;
+        animation-duration: 1.0s;
+      }
+      .characterAge {
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 8.5%;
+        top: 25.1%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterWeight {
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 8.5%;
+        top: 28.3%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterHeight {
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 8.5%;
+        top: 31.5%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterEyeColor {
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 8.5%;
+        top: 34.7%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterHairColor {
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 35.5%;
+        top: 25.1%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterHairStyle{
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 35.5%;
+        top: 28.3%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterSkinTone{
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 35.5%;
+        top: 31.5%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterAlignment{
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 35.5%;
+        top: 34.7%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterGender{
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 47.5%;
+        top: 12%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterRace{
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 19%;
+        top: 12%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterName{
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        left: 19%;
+        top: 6%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterFamilyHistory{
+        position: absolute;
+        height: 100px;
+        width: 600px;
+        left: -20%;
+        top: 50%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      
+      .characterFlaw{
+        position: absolute;
+        height: 100px;
+        width: 600px;
+        left: -20%;
+        top: 58.2%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
+      }
+      .characterTalent{
+        position: absolute;
+        height: 100px;
+        width: 600px;
+        left: -20%;
+        top: 66.5%;
+        transform: translate(50%, 50%);
+        overflow: hidden;
       }
     </style>
   </head>
   <body>
-    <div class="displayPage">
-      <img class="stats" src="images/statPage.png" />
+      <img class="stats" src="images/statPage.png"/>
     </div>
-    <div id="age1">
-      <b id="characterage"></b>
-    </div>
+    <div id="age1"></div>
   </body>
 </html>
