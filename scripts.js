@@ -13,17 +13,19 @@ request.onload = function() {
     wrapper.appendChild(charSheetDimensions)
     const charSheet = document.getElementsByClassName('stats')[0]
     charSheetDimensions.appendChild(charSheet)
+    const rollButton = document.getElementsByClassName('buttons')[0]
+    charSheetDimensions.appendChild(rollButton)
     const characterData = document.createElement('div')
     characterData.setAttribute('class', 'characterInfo')
     const characterAge = document.createElement('div')
     characterAge.setAttribute('class', 'characterAge')
-    characterAge.set
     characterAge.innerHTML = randomData.physicalAttribute.age
     charSheetDimensions.appendChild(characterData)
     characterData.appendChild(characterAge)
     const characterEyeColor = document.createElement('div')
     characterEyeColor.setAttribute('class','characterEyeColor')
-    characterEyeColor.innerHTML = randomData.physicalAttribute.eyeColor
+    characterEyeColor.innerHTML = randomData.physicalAttribute.eyeColor.toLowerCase()
+    characterEyeColor.innerHTML = characterEyeColor.innerHTML.charAt(0).toUpperCase() + characterEyeColor.innerHTML.slice(1)
     characterData.appendChild(characterEyeColor)
     const characterGender = document.createElement('div')
     characterGender.setAttribute('class', 'characterGender')
@@ -31,11 +33,13 @@ request.onload = function() {
     characterData.appendChild(characterGender)
     const characterHairColor = document.createElement('div')
     characterHairColor.setAttribute('class','characterHairColor')
-    characterHairColor.innerHTML = randomData.physicalAttribute.hair.hairColor
+    characterHairColor.innerHTML = randomData.physicalAttribute.hair.hairColor.toLowerCase()
+    characterHairColor.innerHTML = characterHairColor.innerHTML.charAt(0).toUpperCase() + characterHairColor.innerHTML.slice(1)
     characterData.appendChild(characterHairColor)
     const characterHairStyle = document.createElement('div')
     characterHairStyle.setAttribute('class','characterHairStyle')
-    characterHairStyle.innerHTML = randomData.physicalAttribute.hair.hairStyle
+    characterHairStyle.innerHTML = randomData.physicalAttribute.hair.hairStyle.toLowerCase()
+    characterHairStyle.innerHTML = characterHairStyle.innerHTML.charAt(0).toUpperCase() + characterHairStyle.innerHTML.slice(1)
     characterData.appendChild(characterHairStyle)
     const characterHeight = document.createElement('div')
     characterHeight.setAttribute('class', 'characterHeight')
@@ -43,11 +47,13 @@ request.onload = function() {
     characterData.appendChild(characterHeight)
     const characterRace = document.createElement('div')
     characterRace.setAttribute('class','characterRace')
-    characterRace.innerHTML = randomData.physicalAttribute.race
+    characterRace.innerHTML = randomData.physicalAttribute.race.toLowerCase()
+    characterRace.innerHTML = characterRace.innerHTML.charAt(0).toUpperCase() + characterRace.innerHTML.slice(1)
     characterData.appendChild(characterRace)
     const characterSkinTone = document.createElement('div')
     characterSkinTone.setAttribute('class','characterSkinTone')
-    characterSkinTone.innerHTML = randomData.physicalAttribute.skin
+    characterSkinTone.innerHTML = randomData.physicalAttribute.skin.toLowerCase()
+    characterSkinTone.innerHTML = characterSkinTone.innerHTML.charAt(0).toUpperCase() + characterSkinTone.innerHTML.slice(1)
     characterData.appendChild(characterSkinTone)
     const characterWeight = document.createElement('div')
     characterWeight.setAttribute('class','characterWeight')
